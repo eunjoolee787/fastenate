@@ -1,0 +1,304 @@
+@import url(http://fonts.googleapis.com/css?family=Lato|Oswald);
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+html {
+  background-color: #262526;
+}
+
+body {
+/*  line-height: 1;*/
+  background-image: url("/images/bg.jpg");
+  background-repeat: repeat;
+  background-position: center;
+}
+
+ol, ul {
+  list-style: none;
+} 
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* nav */
+
+/*
+#title{
+  background-image: url("images/header_bg.svg");
+  background-position: center;
+}*/
+
+/*nav ul#main_nav{
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  position: relative;
+}*/
+
+#banner{
+  background-image: url("/images/header_bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  text-align: center;
+  position: relative;
+}
+
+#icon a{
+  text-decoration: none;
+  color: red;
+  background-size: 100%;
+  border: 2px solid orange;
+  padding: 3px 5px;
+}
+
+#icon a:hover{
+  color: orange;
+}
+
+#icon{
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+nav ul#main_nav{
+  padding: 15px;
+  background-color: #575457;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+.nav_item{
+  display: inline;
+}
+
+.nav_item a{
+  color: #a6a6a6;
+  text-decoration: none;
+}
+
+#sub_nav .body_info{
+  font-size: 10px;
+  color: #9c9d95;
+}
+
+/*.nav_item a:visited{
+  color: #fff;
+}*/
+
+.nav_item a:hover{
+  color: orange;
+  display: inline;
+}
+
+/* content */
+
+
+#body_container{
+  padding: 25px;
+}
+
+.body_content{
+  text-align: left;
+  width: 50%;
+  padding: 5px 5px 5px 5px;
+  margin: 5px auto;
+  background-color: white;
+  border: 2px solid white;
+  font-family: 'Lato', sans-serif;
+}
+
+.body_content:hover{
+  border: 3px solid orange;
+}
+
+section .section_head{
+  font-size: 15px;
+}
+
+.kitten{
+  float: left;
+  width: 25%;
+}
+
+.kitten img {
+  width: 100%;
+  height: auto;
+}
+
+.content{
+  float: right;
+  width: 75%;
+  padding-left: 25px;
+  box-sizing: border-box;
+}
+
+p{
+  font-size: 10px;
+  padding-top: 15px;/*TO DO fix when streching*/
+}
+
+
+/* Make extra space at bottom match footer color */
+
+ /* footer */
+
+footer ul#footer_logo{
+  background-color: #262526;
+  text-align: center;
+  padding: 25px;
+}
+
+.facebook_logo,
+.instagram_logo{
+  display: inline;
+  padding: 5px;
+}
+
+.facebook_logo a{
+  background-image: url("/images/facebook_grey.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+
+.facebook_logo a span{
+  display: none;
+}
+
+.facebook_logo a:hover{
+  background-image: url("/images/facebook_orange.svg");
+  background-repeat: no-repeat;
+  color: orange;
+}
+
+.instagram_logo a{
+  background-image: url("/images/instagram_grey.svg");
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  display: inline-block; 
+}
+
+.instagram_logo a span{
+  display: none;
+}
+
+.instagram_logo a:hover{
+  background-image: url("/images/instagram_orange.svg");
+  background-repeat: no-repeat;
+  color: orange;
+}
+
+/* PHONE */
+/*@media only screen and (max-width: 375px){
+  #body_container {
+    margin: 0;
+  }
+}*/
+
+
+/* TABLET ONLY */
+/*@media only screen and (min-width: 481px) and (max-width: 768px){
+#body_container{
+  padding: 25px;
+}
+
+.body_content{
+  width: 100%;
+}
+
+footer{
+  display: none;
+}
+*/
+
+/* DESKTOP ONLY */
+/*@media only screen and (min-width: 769px){
+.body_content{
+  width: 75%;
+}
+
+}*/
+
+/* PHONE ONLY */
+@media only screen and (max-width: 480px){
+#body_container{
+  max-width: 100%;
+}
+
+.body_content{
+  max-width: 100%;
+}
+
+p{
+  display: none;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
