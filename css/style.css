@@ -116,7 +116,8 @@ nav ul#main_nav{
 }
 
 .nav_item{
-  display: inline;
+  display: inline-block;
+  color: #a6a6a6;
 }
 
 .nav_item a{
@@ -180,7 +181,7 @@ section .section_head{
   box-sizing: border-box;
 }
 
-p{
+.content p{
   font-size: 10px;
   padding-top: 15px;/*TO DO fix when streching*/
 }
@@ -239,52 +240,112 @@ footer ul#footer_logo{
 }
 
 /* PHONE */
-/*@media only screen and (max-width: 375px){
-  #body_container {
-    margin: 0;
+@media only screen and (max-width: 480px){
+  
+  #banner{
+    background-image: none;
+    text-align: left;
+    padding-left: 25px;
+  /*  background-image: url("/images/header_bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    text-align: center;
+    position: relative;*/
   }
-}*/
+
+  nav ul#main_nav{
+    padding: 0;
+  }
+
+  .nav_item{
+    padding: 10px 40px;
+    border-left: 1px solid #a6a6a6;
+  }
+
+  .nav_item.middot{
+    display: none;
+  }
+
+  .nav_item a{
+    text-align: center;
+  }
+
+  .nav_item:first-child{
+    border-left: none;
+  }
+
+  #body_container{
+    padding: 0;
+  }
+
+  .body_content{
+    width: auto;
+    margin: 10px;
+  }
+  
+  .content p{
+    font-size: 10px;
+    padding-top: 15px;
+    display: none;
+  }
+
+  footer{
+    display: none;
+  }
+
+  html{
+    background-image: url("/images/bg.jpg");
+  }
+}
 
 
 /* TABLET ONLY */
-/*@media only screen and (min-width: 481px) and (max-width: 768px){
-#body_container{
-  padding: 25px;
+@media only screen and (min-width: 481px) and (max-width: 768px){
+  #body_container{
+    padding: 0;
+  }
+
+  .body_content{
+    width: auto;
+    margin: 10px;
+  }
+  
+  .content p{
+    font-size: 10px;
+    padding-top: 15px;
+  }
+
+  footer{
+    display: none;
+  }
+
+  html{
+    background-image: url("/images/bg.jpg");
+  }
 }
 
-.body_content{
-  width: 100%;
-}
-
-footer{
-  display: none;
-}
-*/
 
 /* DESKTOP ONLY */
-/*@media only screen and (min-width: 769px){
-.body_content{
-  width: 75%;
+@media only screen and (min-width: 769px){
+  .body_content{
+    width: 75%;
+  }
 }
-
-}*/
 
 /* PHONE ONLY */
 @media only screen and (max-width: 480px){
-#body_container{
-  max-width: 100%;
-}
+  #body_container{
+    max-width: 100%;
+  }
 
-.body_content{
-  max-width: 100%;
-}
+  .body_content{
+    max-width: 100%;
+  }
 
-p{
-  display: none;
-}
-
-
-
+  .content p{
+    display: none;
+  }
 }
 
 
