@@ -123,9 +123,9 @@ a#icon{
 }
 
 a#icon:hover{
-  background-color: #91471A;
   color: #FFF;
   border-color: #91471A;
+  background-color: #CA5516;
 }
 
 nav ul#main_nav{
@@ -149,8 +149,8 @@ nav ul#main_nav{
   padding-bottom: 15px;
 }
 
-#sub_nav .body_info{
-  font-size: 10px;
+#sub_nav{
+  font-size: 15px;
   color: #9c9d95;
 }
 
@@ -179,17 +179,17 @@ nav ul#main_nav{
   margin: 5px auto;
   background-color: white;
   border: 3px solid white;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Oswald', sans-serif;
   /* KELLI ADDED THIS */
-  height: 140px;
+ /* height: 140px;*/
 }
 
 .body_content:hover{
-  border: 3px solid orange;
+  border: 3px solid #E3B138;
 }
 
 .body_content .section_head{
-  font-size: 15px;
+  font-size: 25px;
 }
 
 .body_content .kitten{
@@ -224,7 +224,7 @@ nav ul#main_nav{
 }
 
 .body_content .content p{
-  font-size: 10px;
+  font-size: 15px;
   padding-top: 15px;/*TO DO fix when streching*/
 }
 
@@ -260,7 +260,7 @@ footer ul#footer_logo{
 .facebook_logo a:hover{
   background-image: url("/images/facebook_orange.svg");
   background-repeat: no-repeat;
-  color: orange;
+  color: #E3B138;
 }
 
 .instagram_logo a{
@@ -278,7 +278,7 @@ footer ul#footer_logo{
 .instagram_logo a:hover{
   background-image: url("/images/instagram_orange.svg");
   background-repeat: no-repeat;
-  color: orange;
+  color: #E3B138;
 }
 
 /* PHONE */
@@ -317,19 +317,19 @@ footer ul#footer_logo{
     border-left: none;
   }
 
-  #body_container{
+/*  #body_container{
     padding: 0;
-  }
+  }*/
 
   .body_content{
     width: auto;
     margin: 10px;
   }
   
-  .content p{
+  .content #desc{
     font-size: 10px;
     padding-top: 15px;
-    display: none;
+    /*display: none;*/
   }
 
   footer{
@@ -350,12 +350,12 @@ footer ul#footer_logo{
 
   .body_content{
     width: auto;
-    margin: 10px;
+    margin: 5px;
   }
   
   .content p{
-    font-size: 10px;
-    padding-top: 15px;
+    font-size: 5px;
+    padding-top: 5px;
   }
 
   footer{
@@ -385,9 +385,14 @@ footer ul#footer_logo{
     max-width: 100%;
   }
 
-  .content p{
+  .body_content .section_head{
+    font-size: 15px;
+  }
+
+  .content #desc{
     display: none;
   }
+
 }
 
 
