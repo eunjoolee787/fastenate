@@ -86,6 +86,16 @@ table {
   position: relative;
 }
 
+/*#icon{
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
 #icon a{
   text-decoration: none;
   color: red;
@@ -96,16 +106,26 @@ table {
 
 #icon a:hover{
   color: orange;
+}*/
+
+a#icon{
+  position: absolute;
+  top:16px;
+  right: 16px;
+  display: block;
+  width: 28px;
+  height: 28px;
+  font-size: 30px;
+  text-decoration: none;
+  border: 2px solid #E3B138;
+  line-height: 24px;
+  color: #91471A;
 }
 
-#icon{
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 20px;
-  width: 20px;
-  position: absolute;
-  top: 20px;
-  right: 10px;
+a#icon:hover{
+  background-color: #91471A;
+  color: #FFF;
+  border-color: #91471A;
 }
 
 nav ul#main_nav{
@@ -118,11 +138,15 @@ nav ul#main_nav{
 .nav_item{
   display: inline-block;
   color: #a6a6a6;
+  /*background-color: pink;*/
 }
 
 .nav_item a{
   color: #a6a6a6;
   text-decoration: none;
+  /*background-color: blue;*/
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #sub_nav .body_info{
@@ -144,6 +168,8 @@ nav ul#main_nav{
 
 #body_container{
   padding: 25px;
+  max-width: 1000px;
+  margin:auto;
 }
 
 .body_content{
@@ -152,36 +178,52 @@ nav ul#main_nav{
   padding: 5px 5px 5px 5px;
   margin: 5px auto;
   background-color: white;
-  border: 2px solid white;
+  border: 3px solid white;
   font-family: 'Lato', sans-serif;
+  /* KELLI ADDED THIS */
+  height: 140px;
 }
 
 .body_content:hover{
   border: 3px solid orange;
 }
 
-section .section_head{
+.body_content .section_head{
   font-size: 15px;
 }
 
-.kitten{
+.body_content .kitten{
   float: left;
   width: 25%;
+  /* KELLI ADDED THIS */
+  /*max-height: 150px;*/
+  /*background-color: red;*/
+  /*text-align: center;*/
+  /* VERSION 2 */
+  /*background-size: contain;*/
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-color: red;
+  height: 140px;
 }
 
-.kitten img {
-  width: 100%;
-  height: auto;
+.body_content .kitten img {
+  /*width: 100%;*/
+  /*height: auto;*/
+  /* KELLI ADDED THIS */
+  max-height: 150px;
+  max-width: 100%;
 }
 
-.content{
+.body_content .content{
   float: right;
   width: 75%;
   padding-left: 25px;
   box-sizing: border-box;
 }
 
-.content p{
+.body_content .content p{
   font-size: 10px;
   padding-top: 15px;/*TO DO fix when streching*/
 }
