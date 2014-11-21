@@ -26,7 +26,7 @@ $(function(){
           var author_p_element = $("<p>");
           author_p_element.addClass("author");
           author_p_element.html(json_doc.author);
-          body_container.append(author_p_element);
+          body_content.append(author_p_element);
 
           $("#body_container").append(body_content);
         };
